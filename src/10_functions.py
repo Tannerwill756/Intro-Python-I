@@ -12,9 +12,9 @@ def is_even():
 
 # YOUR CODE HERE
     if (num % 2) == 0:
-        print("Even!")
+        print(f'{num} is Even!')
     else:
-        print("Odd")
+        print(f'{num} is Odd')
 
 
 is_even()
