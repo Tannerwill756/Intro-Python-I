@@ -37,11 +37,11 @@ year, month = datetime.today().year, datetime.today().month
 
 if len(sys.argv) == 1:
     print(calendar.month(year, month))
-elif len(sys.argv) == 2:
+elif len(sys.argv) == 2 and int(sys.argv[1]) < 13 and int(sys.argv[1]) > 0:
     year, month = year, int(sys.argv[1])
     print(calendar.month(year, month))
-elif len(sys.argv) == 3:
+elif len(sys.argv) == 3 and int(sys.argv[1]) < 13 and int(sys.argv[1]) > 0:
     year, month = int(sys.argv[2]), int(sys.argv[1])
     print(calendar.month(year, month))
 else:
-    print("Please use the format [month] [year]")
+    print("Please use the format '14_cal.py [month] [year]'")
